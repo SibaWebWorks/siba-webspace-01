@@ -22,4 +22,4 @@
 ## 🔧 Setup & Usage  
 1. Clone this repo:  
    ```bash
-   git clone https://github.com/your-username/siba-webspace-01.git
+   https://github.com/SibaWebWorks/siba-webspace-01.git
