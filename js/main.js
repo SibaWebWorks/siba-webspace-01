@@ -3,7 +3,7 @@ window.addEventListener("scroll", function(){
     const header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0);
 })
-//Portfolio section - Modal
+//Services section - Modal
 const serviceModals = document.querySelectorAll(".service-modal");
 const learnmoreBtns = document.querySelectorAll(".learn-more-btn");
 const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
@@ -22,6 +22,30 @@ modalCloseBtns.forEach((modalCloseBtn) => {
     modalCloseBtn.addEventListener("click", () => {
         serviceModals.forEach((modalView) => {
             modalView.classList.remove("active");
+        });
+    });
+});
+
+//Portfolio section - Modal
+
+const portfolioModals = document.querySelectorAll(".portfolio-model");
+const imageCards = document.querySelectorAll(".img-card");
+const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
+
+var portfolioModal = function(modalClick){
+    portfolioModals[modalClick].classList.add("active");
+}
+
+imageCards.forEach((imageCard, i) => {
+    imageCard.addEventListener("click", () => {
+        portfolioModal(i);
+    })
+}) 
+
+portfolioCloseBtns.forEach((portfolioCloseBtn) => {
+    portfolioCloseBtn.addEventListener("click", () => {
+        portfolioModals.forEach((portfolioModalView) => {
+            portfolioModalView.classList.remove("active");
         });
     });
 });
