@@ -821,13 +821,8 @@ header.sticky .nav-bar{
 }
 
 .client-swiper .swiper-slide {
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-  justify-content: center;
   gap: 50px;
   margin: 20px 0;
-  flex-wrap: wrap;
 }
 
 .client-img{
@@ -845,7 +840,6 @@ header.sticky .nav-bar{
 
 .client-details {
   max-width: 500px;
-  flex: 1;
 }
 
 .client-details p{
@@ -854,6 +848,11 @@ header.sticky .nav-bar{
   padding-bottom: 15px;
   margin-bottom: 10px;
   border-bottom: 2px solid var(--line-color);
+}
+
+.client-details h3{
+  color: var(--first-color);
+  font-size: 1.5em;
 }
 
 .client-details span{

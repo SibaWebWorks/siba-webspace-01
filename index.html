@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Responsive Personal Portfolio Website - Html, Css & Javascript</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Personal Portfolio Website - Html, Css & Javascript</title>
+
+  <!-- Load Swiper CSS first -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Then your stylesheet so it wins on conflicts -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome (unchanged) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
   <body>
 
     <!--=======Scroll to top button=======-->
@@ -498,8 +501,10 @@
                   </div>
                 </div>
                 <div class="swiper-button-next">
+                  <i class="fas fa-chevron-right"></i>
                 </div>
                 <div class="swiper-button-prev">
+                  <i class="fas fa-chevron-left"></i>
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
