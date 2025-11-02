@@ -1,6 +1,6 @@
 =======Home section=======
 
-Hi, I am Martian
+Hi, I am Sibabalwe
 
 Front-end Developer
 
@@ -8,7 +8,7 @@ I create stunning websites for your business, Highly experienced in web design a
 
 =======About section=======
 
-I'm Martian
+I'm Sibabalwe
 
 A Lead Front-End Developer based in California
 
