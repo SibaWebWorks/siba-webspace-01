@@ -1183,7 +1183,16 @@ footer a {
   justify-content: start;
 }
 
-  /*=======Get-in-touct=======*/
+  /*=======Get-in-touch=======*/
+.get-in-touch .contact-card {
+  display: grid;
+  width: 100%;
+}
+
+.contact-card .title {
+  font-size: 0.8rem;
+  line-height: 50px;
+}
 
   /*=======Our clients=======*/
 
