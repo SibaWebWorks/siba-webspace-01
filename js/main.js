@@ -1,4 +1,4 @@
-// Navigation bar effects on scroll
+ // Navigation bar effects on scroll
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
@@ -88,6 +88,16 @@ document.addEventListener("DOMContentLoaded", () => {
 // Website dark/light theme
 
 // Scroll to top button
+const scrollTopBtn = document.querySelector(".scrollToTop-btn");
+
+window.addEventListener("scroll", function () {
+  scrollTopBtn.classList.toggle("active", window.scrollY > 500);
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
 
 // Navigation menu items active on page scroll
 
