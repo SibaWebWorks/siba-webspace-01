@@ -321,7 +321,7 @@ header.sticky .nav-bar {
 
 .section {
   position: relative;
-  width: 1150px;
+  max-width: 1150px;
   margin-left: auto;
   margin-right: auto;
   padding: 6rem 2rem 2rem;
@@ -329,7 +329,7 @@ header.sticky .nav-bar {
 
 .sub-section {
   position: relative;
-  width: 1150px;
+  max-width: 1150px;
   margin-left: auto;
   margin-right: auto;
   padding: 6rem 0;
@@ -414,6 +414,14 @@ header.sticky .nav-bar {
 .about-info .professional-list {
   display: flex;
   column-gap: 30px;
+}
+
+.about-info .professional-list .list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 20px;
 }
 
 .about-info .professional-list .list-item h3 {
@@ -1146,8 +1154,34 @@ footer a {
 
 
   /*=======Home section=======*/
+  .home .home-container .info {
+    font-size: 0.85rem;
+  }
 
   /*=======About section=======*/
+  .about .container .content {
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+  }
+
+  .about-img img {
+  min-width: 0;
+  width: 100%;
+}
+
+.about-info {
+  min-width: 0;
+  width: 100%;
+}
+
+.about-info .professional-list {
+  flex-direction: column;
+}
+
+.about-info .professional-list .list-item {
+  justify-content: start;
+}
 
   /*=======Get-in-touct=======*/
 
