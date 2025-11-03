@@ -1,4 +1,4 @@
- // Navigation bar effects on scroll
+// Navigation bar effects on scroll
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
@@ -164,10 +164,10 @@ navItems.forEach((navItem) => {
 // Scroll reveal animations
 // Common reveal options to create reveal animations
 ScrollReveal({
-  reset: true,
-  distance: '60px',
-  duration: 2500,
-  delay: 100
+  reset: false,
+  distance: '24px',
+  duration: 800,
+  delay: 0
 });
 
 // Target elements, and specify options to create reveal animations
